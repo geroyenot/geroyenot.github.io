@@ -1,0 +1,11 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Герой">
+<link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="manifest" href="manifest.webmanifest">
+<title>Герой</title>
+<style>html,body{margin:0;height:100%;background:#17191e;color:#f0d690;font:600 18px system-ui;-webkit-text-size-adjust:100%}body{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:env(safe-area-inset-top) 20px env(safe-area-inset-bottom)}img{width:120px;height:120px;border-radius:26px}b{font-size:30px}.ok{color:#7ad67a}.no{color:#e8a04a}small{color:#aaa;font-weight:400}</style></head>
+<body><img src="apple-touch-icon.png" alt=""><b>Герой — проверка</b><div id="m"></div><small id="s"></small>
+<script>var sa=navigator.standalone||matchMedia('(display-mode: standalone)').matches||matchMedia('(display-mode: fullscreen)').matches;
+document.getElementById('m').innerHTML=sa?'<span class="ok">✓ Открыто как приложение — на весь экран, без Safari</span>':'<span class="no">Открыто в браузере. Добавь на экран «Домой» и открой с иконки.</span>';
+function sz(){document.getElementById('s').textContent='Экран: '+innerWidth+'×'+innerHeight}sz();addEventListener('resize',sz);</script></body></html>
